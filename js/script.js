@@ -64,6 +64,20 @@ $(function () {
     }
   });
 
+  // ACORDEON PREGUNTAS FRECUENTES
+  // 1. SELECCIONAR
+  const preguntas = $('.faq-pregunta');
+
+  // 2. ESCUCHAR
+  preguntas.on('click', function () {
+    // 3. CAMBIAR
+    $(this).next('.faq-respuesta').slideToggle();
+    $(this).find('.faq-icono').toggleClass('rotate-180');
+
+    const abierta = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', abierta ? 'false' : 'true');
+  });
+
   // MINI SLIDERS SHOP THE LOOK
   $('.slider-look').each(function () {
     const caja = $(this).parent();
