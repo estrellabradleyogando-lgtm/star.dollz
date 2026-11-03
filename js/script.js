@@ -26,4 +26,18 @@ $(function () {
     }
   });
 
+  // MINI SLIDERS SHOP THE LOOK
+  $('.slider-look').each(function () {
+    const caja = $(this).parent();
+
+    new Swiper(this, {
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: caja.find('.look-siguiente')[0],
+        prevEl: caja.find('.look-anterior')[0]
+      }
+    });
+  });
+
 });
