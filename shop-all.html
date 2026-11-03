@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP ALL_ · STAR DOLLZ_</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+
+    @theme static {
+      --color-rosa: #ff00d3;
+      --color-tinta: #000000;
+      --color-papel: #ffffff;
+      --color-niebla: #f3f3f3;
+
+      --font-titulo: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --font-mono: "Roboto Mono", monospace;
+    }
+  </style>
+</head>
+<body class="bg-papel text-tinta font-titulo dark:bg-tinta dark:text-papel">
+
+  <!-- BARRA PROMO -->
+  <div class="barra-promo bg-tinta text-rosa font-mono font-medium text-sm lg:text-2xl py-2 lg:py-4 uppercase">
+    <p class="sr-only">Get 10% off at checkout: code NEWDOLLZ10</p>
+    <!-- la pista tiene el texto 2 veces: se mueve la mitad y vuelve a empezar sin que se note -->
+    <div class="barra-promo__pista flex" aria-hidden="true">
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+      <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-4 h-4 lg:w-[22px] lg:h-[22px]" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
+    </div>
+  </div>
+
+  <!-- CABECERA -->
+  <header class="bg-papel dark:bg-tinta border-b border-tinta dark:border-papel">
+    <div class="flex items-center justify-between px-4 py-4 lg:px-12 lg:py-8">
+
+      <!-- boton hamburguesa (solo movil) -->
+      <button id="boton-menu" class="lg:hidden text-2xl hover:text-rosa focus:text-rosa" aria-label="Abrir menú">☰</button>
+
+      <!-- nav escritorio -->
+      <nav class="hidden lg:flex gap-7 text-xl font-medium uppercase">
+        <a href="shop-all.html" class="hover:text-rosa hover:underline focus:text-rosa">Shop</a>
+        <a href="starnews.html" class="hover:text-rosa hover:underline focus:text-rosa">#Starnews</a>
+        <a href="#contacto" class="hover:text-rosa hover:underline focus:text-rosa">Contact</a>
+      </nav>
+
+      <!-- logo -->
+      <a href="index.html">
+        <img src="https://ik.imagekit.io/TU_ID/logo-stardollz.svg" alt="Star Dollz" class="h-7 lg:h-12 dark:invert">
+      </a>
+
+      <!-- iconos -->
+      <div class="flex items-center gap-4 lg:gap-7">
+        <a href="#" class="hidden lg:inline text-xl font-medium uppercase hover:text-rosa">Country ▾</a>
+        <!-- boton modo oscuro -->
+        <button id="boton-tema" class="relative w-[43px] h-[23px] rounded-full border-[1.5px] border-tinta bg-papel dark:border-papel dark:bg-tinta" aria-label="Cambiar modo claro u oscuro">
+          <span class="absolute top-px left-px w-[18px] h-[18px] rounded-full bg-tinta dark:bg-papel transition-transform duration-300 dark:translate-x-5"></span>
+        </button>
+        <a href="#" aria-label="Buscar" class="hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-search.svg" alt="" class="w-6 h-6 dark:invert">
+        </a>
+        <a href="#" aria-label="Favoritos" class="hidden sm:inline hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-star.svg" alt="" class="w-6 h-6 dark:invert">
+        </a>
+        <a href="#" aria-label="Mi cuenta" class="hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-user.svg" alt="" class="w-6 h-6 dark:invert">
+        </a>
+      </div>
+    </div>
+
+    <!-- menu movil (oculto al principio) -->
+    <nav id="menu" class="hidden lg:hidden flex-col border-t border-tinta dark:border-papel px-4 py-4 gap-3 text-lg font-medium uppercase">
+      <a href="shop-all.html" class="block hover:text-rosa focus:text-rosa">Shop</a>
+      <a href="starnews.html" class="block hover:text-rosa focus:text-rosa">#Starnews</a>
+      <a href="#contacto" class="block hover:text-rosa focus:text-rosa">Contact</a>
+      <a href="#" class="block hover:text-rosa focus:text-rosa">Country ▾</a>
+    </nav>
+  </header>
+
+    <main>
+
+    <!-- TITULO -->
+    <section id="shop-all" class="px-4 py-10 lg:px-12 lg:py-16">
+      <h1 class="text-5xl lg:text-8xl font-medium uppercase mb-8 lg:mb-12 lg:pl-60">Shop_all_</h1>
+
+      <!-- REJILLA DE PRODUCTOS: 2 columnas en movil, 3 en tablet y 4 en escritorio -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10">
+
+      <!-- producto 1 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 2 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 3 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 4 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- imagen editorial 1 (ocupa 2 columnas) -->
+      <figure class="col-span-2">
+        <img src="https://ik.imagekit.io/TU_ID/shop-all-editorial-fur-boots.png" alt="Modelo con botas de pelo de Star Dollz" class="w-full h-full object-cover">
+      </figure>
+
+      <!-- producto 5 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 6 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 7 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 8 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 9 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 10 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 11 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 12 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- imagen editorial 2 (ocupa 2 columnas) -->
+      <figure class="col-span-2">
+        <img src="https://ik.imagekit.io/TU_ID/shop-all-editorial-fur-boots.png" alt="Modelo con botas de pelo de Star Dollz" class="w-full h-full object-cover">
+      </figure>
+
+      <!-- producto 13 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 14 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 15 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      <!-- producto 16 -->
+      <article class="tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
+        <div class="relative">
+          <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+          <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
+        </div>
+        <div class="p-4 flex flex-col gap-1">
+          <h2 class="text-rosa font-mono font-bold uppercase">Golden Leopard Bikini with Shorts</h2>
+          <p class="text-rosa font-mono">€45,00 EUR</p>
+          <p class="font-mono text-sm text-tinta/50 dark:text-papel/50">2 colours</p>
+        </div>
+      </article>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- PIE DE PAGINA -->
+  <footer id="contacto" class="relative z-10 bg-papel dark:bg-tinta border-t border-tinta dark:border-papel">
+    <div class="flex flex-col gap-10 px-4 py-8 lg:flex-row lg:justify-between lg:px-6">
+
+      <!-- enlaces -->
+      <div>
+        <ul class="font-bold uppercase leading-tight">
+          <li><a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop all</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Shipping</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Production</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Privacy policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Refund policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Shipping policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Contact information</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Terms of service</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Cookie preferences</a></li>
+        </ul>
+        <p class="font-bold text-tinta/50 dark:text-papel/50 mt-4">© 2026 Star Dollz</p>
+
+        <!-- redes -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" aria-label="Instagram" class="hover:opacity-60 focus:opacity-60">
+            <img src="https://ik.imagekit.io/TU_ID/icon-instagram.svg" alt="" class="w-12 h-12">
+          </a>
+          <a href="#" aria-label="TikTok" class="hover:opacity-60 focus:opacity-60">
+            <img src="https://ik.imagekit.io/TU_ID/icon-tiktok.svg" alt="" class="w-12 h-12">
+          </a>
+        </div>
+      </div>
+
+      <!-- formulario de contacto -->
+      <form class="flex flex-col gap-4 lg:w-[34rem]">
+        <h2 class="text-2xl font-bold uppercase">Contact us</h2>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <label class="sr-only" for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Enter your name" class="flex-1 border border-tinta dark:border-papel bg-transparent font-mono px-4 py-3 focus:outline-2 focus:outline-rosa">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your e-mail" class="flex-1 border border-tinta dark:border-papel bg-transparent font-mono px-4 py-3 focus:outline-2 focus:outline-rosa">
+        </div>
+        <button type="submit" class="bg-tinta text-papel dark:bg-papel dark:text-tinta text-2xl font-medium uppercase py-4 hover:bg-rosa hover:text-tinta focus:bg-rosa focus:text-tinta">Connect</button>
+      </form>
+    </div>
+
+    <!-- logo cromado -->
+    <img src="https://ik.imagekit.io/TU_ID/footer-logo-chrome-stardollz.png" alt="Star Dollz" class="w-full">
+  </footer>
+
+  <!-- BLOQUE GIF FIJO -->
+  <div class="bloque-gif sticky top-0 h-screen">
+    <img src="https://ik.imagekit.io/TU_ID/stardollz-video.gif" alt="" class="w-full h-full object-cover">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
