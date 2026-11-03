@@ -28,10 +28,59 @@
 </head>
 <body class="bg-papel text-tinta font-titulo dark:bg-tinta dark:text-papel">
 
-  <header></header>
+  <header>
+      <!-- BARRA PROMO -->
+  <div class="bg-tinta text-rosa font-mono text-xs sm:text-sm py-2 text-center uppercase">
+    <p>☆ Get 10% off at checkout: code NEWDOLLZ10 ☆</p>
+  </div>
+
+  <!-- CABECERA -->
+  <header class="bg-papel dark:bg-tinta border-b border-tinta dark:border-papel">
+    <div class="flex items-center justify-between px-4 py-4 lg:px-12 lg:py-8">
+
+      <!-- boton hamburguesa (solo movil) -->
+      <button id="boton-menu" class="lg:hidden text-2xl hover:text-rosa focus:text-rosa" aria-label="Abrir menú">☰</button>
+
+      <!-- nav escritorio -->
+      <nav class="hidden lg:flex gap-7 text-xl font-medium uppercase">
+        <a href="shop-all.html" class="hover:text-rosa hover:underline focus:text-rosa">Shop</a>
+        <a href="starnews.html" class="hover:text-rosa hover:underline focus:text-rosa">#Starnews</a>
+        <a href="#contacto" class="hover:text-rosa hover:underline focus:text-rosa">Contact</a>
+      </nav>
+
+      <!-- logo -->
+      <a href="index.html">
+        <img src="https://ik.imagekit.io/TU_ID/logo-stardollz.svg" alt="Star Dollz" class="h-7 lg:h-12">
+      </a>
+
+      <!-- iconos -->
+      <div class="flex items-center gap-4 lg:gap-7">
+        <a href="#" class="hidden lg:inline text-xl font-medium uppercase hover:text-rosa">Country ▾</a>
+        <a href="#" aria-label="Buscar" class="hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-search.svg" alt="" class="w-6 h-6">
+        </a>
+        <a href="#" aria-label="Favoritos" class="hidden sm:inline hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-star.svg" alt="" class="w-6 h-6">
+        </a>
+        <a href="#" aria-label="Mi cuenta" class="hover:text-rosa focus:text-rosa">
+          <img src="https://ik.imagekit.io/TU_ID/icon-user.svg" alt="" class="w-6 h-6">
+        </a>
+      </div>
+    </div>
+
+    <!-- menu movil (oculto al principio) -->
+    <nav id="menu" class="hidden lg:hidden flex-col border-t border-tinta dark:border-papel px-4 py-4 gap-3 text-lg font-medium uppercase">
+      <a href="shop-all.html" class="block hover:text-rosa focus:text-rosa">Shop</a>
+      <a href="starnews.html" class="block hover:text-rosa focus:text-rosa">#Starnews</a>
+      <a href="#contacto" class="block hover:text-rosa focus:text-rosa">Contact</a>
+      <a href="#" class="block hover:text-rosa focus:text-rosa">Country ▾</a>
+    </nav>
+  </header>
+  </header>
   <main></main>
   <footer></footer>
 
+  <script src="js/script.js"></script>  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
