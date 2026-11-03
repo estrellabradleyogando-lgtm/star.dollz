@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -95,10 +96,12 @@
     <section id="trending" class="py-12 lg:py-20">
       <h2 class="px-4 lg:px-10 text-5xl lg:text-8xl font-medium uppercase mb-8 lg:mb-12">Trending_</h2>
 
-      <div class="flex gap-4 overflow-x-auto px-4 lg:px-16 lg:gap-10">
+      <div class="relative px-4 lg:px-16">
+        <div class="swiper slider-trending">
+          <div class="swiper-wrapper">
 
         <!-- tarjeta producto 1 -->
-        <article class="tarjeta min-w-[75%] sm:min-w-[45%] lg:min-w-0 lg:flex-1 border border-tinta dark:border-papel bg-papel dark:bg-tinta hover:-translate-y-1 transition">
+        <article class="swiper-slide tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
           <div class="relative">
             <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
             <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
@@ -111,7 +114,7 @@
         </article>
 
         <!-- tarjeta producto 2 -->
-        <article class="tarjeta min-w-[75%] sm:min-w-[45%] lg:min-w-0 lg:flex-1 border border-tinta dark:border-papel bg-papel dark:bg-tinta hover:-translate-y-1 transition">
+        <article class="swiper-slide tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
           <div class="relative">
             <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
             <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
@@ -124,7 +127,7 @@
         </article>
 
         <!-- tarjeta producto 3 -->
-        <article class="tarjeta min-w-[75%] sm:min-w-[45%] lg:min-w-0 lg:flex-1 border border-tinta dark:border-papel bg-papel dark:bg-tinta hover:-translate-y-1 transition">
+        <article class="swiper-slide tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
           <div class="relative">
             <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
             <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
@@ -137,7 +140,7 @@
         </article>
 
         <!-- tarjeta producto 4 -->
-        <article class="tarjeta min-w-[75%] sm:min-w-[45%] lg:min-w-0 lg:flex-1 border border-tinta dark:border-papel bg-papel dark:bg-tinta hover:-translate-y-1 transition">
+        <article class="swiper-slide tarjeta border border-tinta dark:border-papel bg-papel dark:bg-tinta">
           <div class="relative">
             <img src="https://ik.imagekit.io/TU_ID/product-golden-leopard-bikini.png" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
             <button class="absolute top-3 right-3 text-2xl text-rosa/55 hover:text-rosa focus:text-rosa" aria-label="Añadir a favoritos">☆</button>
@@ -149,11 +152,16 @@
           </div>
         </article>
 
+          </div>
+        </div>
+        <button class="trending-anterior absolute left-0 top-1/2 z-10 text-3xl hover:text-rosa focus:text-rosa" aria-label="Anterior">‹</button>
+        <button class="trending-siguiente absolute right-0 top-1/2 z-10 text-3xl hover:text-rosa focus:text-rosa" aria-label="Siguiente">›</button>
       </div>
     </section>
   </main>
   <footer></footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
   <script src="js/script.js"></script>
 </body>
