@@ -44,6 +44,12 @@ $(function () {
     }
   });
 
+  // ANIMACIONES AL HACER SCROLL (AOS)
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
   // MINI SLIDERS SHOP THE LOOK
   $('.slider-look').each(function () {
     const caja = $(this).parent();
