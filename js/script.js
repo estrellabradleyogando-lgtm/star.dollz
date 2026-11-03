@@ -12,6 +12,24 @@ $(function () {
     menu.toggleClass('flex');
   });
 
+  // MODO OSCURO
+  // 1. SELECCIONAR
+  const raiz = $('html');
+  const botonTema = $('#boton-tema');
+
+  // al cargar: ¿eligió oscuro la última vez?
+  if (localStorage.getItem('tema') === 'oscuro') {
+    raiz.addClass('dark');
+  }
+
+  // 2. ESCUCHAR
+  botonTema.on('click', function () {
+    // 3. CAMBIAR
+    raiz.toggleClass('dark');
+    const oscuro = raiz.hasClass('dark');
+    localStorage.setItem('tema', oscuro ? 'oscuro' : 'claro');
+  });
+
   // SLIDER TRENDING
   const sliderTrending = new Swiper('.slider-trending', {
     slidesPerView: 1.15,
