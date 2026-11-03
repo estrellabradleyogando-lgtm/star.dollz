@@ -50,6 +50,20 @@ $(function () {
     once: true
   });
 
+  // SLIDER WORN BY YOUR FAVOURITES (igual que trending)
+  const sliderLooks = new Swiper('.slider-looks', {
+    slidesPerView: 1.15,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: '.looks-siguiente',
+      prevEl: '.looks-anterior'
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 4, spaceBetween: 40 }
+    }
+  });
+
   // MINI SLIDERS SHOP THE LOOK
   $('.slider-look').each(function () {
     const caja = $(this).parent();
@@ -57,6 +71,7 @@ $(function () {
     new Swiper(this, {
       slidesPerView: 1,
       loop: true,
+      nested: true,
       navigation: {
         nextEl: caja.find('.look-siguiente')[0],
         prevEl: caja.find('.look-anterior')[0]
