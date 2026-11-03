@@ -50,20 +50,24 @@
 
       <!-- logo -->
       <a href="index.html">
-        <img src="https://ik.imagekit.io/TU_ID/logo-stardollz.svg" alt="Star Dollz" class="h-7 lg:h-12">
+        <img src="https://ik.imagekit.io/TU_ID/logo-stardollz.svg" alt="Star Dollz" class="h-7 lg:h-12 dark:invert">
       </a>
 
       <!-- iconos -->
       <div class="flex items-center gap-4 lg:gap-7">
         <a href="#" class="hidden lg:inline text-xl font-medium uppercase hover:text-rosa">Country ▾</a>
+        <!-- boton modo oscuro -->
+        <button id="boton-tema" class="relative w-[43px] h-[23px] rounded-full border-[1.5px] border-tinta bg-papel dark:border-papel dark:bg-tinta" aria-label="Cambiar modo claro u oscuro">
+          <span class="absolute top-px left-px w-[18px] h-[18px] rounded-full bg-tinta dark:bg-papel transition-transform duration-300 dark:translate-x-5"></span>
+        </button>
         <a href="#" aria-label="Buscar" class="hover:text-rosa focus:text-rosa">
-          <img src="https://ik.imagekit.io/TU_ID/icon-search.svg" alt="" class="w-6 h-6">
+          <img src="https://ik.imagekit.io/TU_ID/icon-search.svg" alt="" class="w-6 h-6 dark:invert">
         </a>
         <a href="#" aria-label="Favoritos" class="hidden sm:inline hover:text-rosa focus:text-rosa">
-          <img src="https://ik.imagekit.io/TU_ID/icon-star.svg" alt="" class="w-6 h-6">
+          <img src="https://ik.imagekit.io/TU_ID/icon-star.svg" alt="" class="w-6 h-6 dark:invert">
         </a>
         <a href="#" aria-label="Mi cuenta" class="hover:text-rosa focus:text-rosa">
-          <img src="https://ik.imagekit.io/TU_ID/icon-user.svg" alt="" class="w-6 h-6">
+          <img src="https://ik.imagekit.io/TU_ID/icon-user.svg" alt="" class="w-6 h-6 dark:invert">
         </a>
       </div>
     </div>
@@ -364,7 +368,57 @@
     </section>
 
   </main>
-  <footer></footer>
+  <!-- PIE DE PAGINA -->
+  <footer id="contacto" class="relative z-10 bg-papel dark:bg-tinta border-t border-tinta dark:border-papel">
+    <div class="flex flex-col gap-10 px-4 py-8 lg:flex-row lg:justify-between lg:px-6">
+
+      <!-- enlaces -->
+      <div>
+        <ul class="font-bold uppercase leading-tight">
+          <li><a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop all</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Shipping</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Production</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Privacy policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Refund policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Shipping policy</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Contact information</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Terms of service</a></li>
+          <li><a href="#" class="hover:text-rosa focus:text-rosa">Cookie preferences</a></li>
+        </ul>
+        <p class="font-bold text-tinta/50 dark:text-papel/50 mt-4">© 2026 Star Dollz</p>
+
+        <!-- redes -->
+        <div class="flex gap-4 mt-4">
+          <a href="#" aria-label="Instagram" class="hover:opacity-60 focus:opacity-60">
+            <img src="https://ik.imagekit.io/TU_ID/icon-instagram.svg" alt="" class="w-12 h-12">
+          </a>
+          <a href="#" aria-label="TikTok" class="hover:opacity-60 focus:opacity-60">
+            <img src="https://ik.imagekit.io/TU_ID/icon-tiktok.svg" alt="" class="w-12 h-12">
+          </a>
+        </div>
+      </div>
+
+      <!-- formulario de contacto -->
+      <form class="flex flex-col gap-4 lg:w-[34rem]">
+        <h2 class="text-2xl font-bold uppercase">Contact us</h2>
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <label class="sr-only" for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Enter your name" class="flex-1 border border-tinta dark:border-papel bg-transparent font-mono px-4 py-3 focus:outline-2 focus:outline-rosa">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your e-mail" class="flex-1 border border-tinta dark:border-papel bg-transparent font-mono px-4 py-3 focus:outline-2 focus:outline-rosa">
+        </div>
+        <button type="submit" class="bg-tinta text-papel dark:bg-papel dark:text-tinta text-2xl font-medium uppercase py-4 hover:bg-rosa hover:text-tinta focus:bg-rosa focus:text-tinta">Connect</button>
+      </form>
+    </div>
+
+    <!-- logo cromado -->
+    <img src="https://ik.imagekit.io/TU_ID/footer-logo-chrome-stardollz.png" alt="Star Dollz" class="w-full">
+  </footer>
+
+  <!-- BLOQUE GIF FIJO -->
+  <div class="bloque-gif sticky top-0 h-screen">
+    <img src="https://ik.imagekit.io/TU_ID/stardollz-video.gif" alt="" class="w-full h-full object-cover">
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
