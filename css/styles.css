@@ -18,10 +18,9 @@
     white-space: nowrap;
   }
 
-  .barra-promo__texto {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquesina 18s linear infinite;
+  .barra-promo__pista {
+    width: max-content;
+    animation: marquesina 30s linear infinite;
   }
 }
 
@@ -31,14 +30,13 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 /* menos movimiento si el usuario lo prefiere */
 @media (prefers-reduced-motion: reduce) {
-  .barra-promo__texto {
+  .barra-promo__pista {
     animation: none;
-    padding-left: 0;
   }
 }
