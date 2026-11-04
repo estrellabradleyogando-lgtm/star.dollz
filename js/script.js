@@ -51,8 +51,14 @@ $(function () {
     once: true
   });
 
+  // cuando cargan todas las fotos la pagina es mas alta, asi que AOS recalcula
+  $(window).on('load', function () {
+    AOS.refresh();
+  });
+
   // SLIDER WORN BY YOUR FAVOURITES (igual que trending)
   const sliderLooks = new Swiper('.slider-looks', {
+    loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
     navigation: {
@@ -86,7 +92,7 @@ $(function () {
 
     new Swiper(this, {
       slidesPerView: 1,
-      loop: true,
+      rewind: true, // con solo 2 prendas vuelve al principio
       nested: true,
       navigation: {
         nextEl: caja.find('.look-siguiente')[0],
