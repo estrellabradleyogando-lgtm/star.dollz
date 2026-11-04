@@ -32,6 +32,7 @@ $(function () {
 
   // SLIDER TRENDING
   const sliderTrending = new Swiper('.slider-trending', {
+    loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
     navigation: {
