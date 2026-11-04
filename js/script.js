@@ -73,7 +73,8 @@ $(function () {
   preguntas.on('click', function () {
     // 3. CAMBIAR
     $(this).next('.faq-respuesta').slideToggle();
-    $(this).find('.faq-icono').toggleClass('rotate-180');
+    $(this).find('.faq-mas').toggleClass('hidden');
+    $(this).find('.faq-menos').toggleClass('hidden');
 
     const abierta = $(this).attr('aria-expanded') === 'true';
     $(this).attr('aria-expanded', abierta ? 'false' : 'true');

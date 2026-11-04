@@ -22,6 +22,27 @@
     width: max-content;
     animation: marquesina 30s linear infinite;
   }
+
+  /* READ MORE: la raya crece de izquierda a derecha */
+  .leer-mas span {
+    position: relative;
+  }
+
+  .leer-mas span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.3s;
+  }
+
+  .leer-mas:hover span::after,
+  .leer-mas:focus span::after {
+    width: 100%;
+  }
 }
 
 /* ===== ANIMACIONES ===== */
@@ -38,5 +59,9 @@
 @media (prefers-reduced-motion: reduce) {
   .barra-promo__pista {
     animation: none;
+  }
+
+  .leer-mas span::after {
+    transition: none;
   }
 }

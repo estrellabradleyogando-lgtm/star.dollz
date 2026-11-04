@@ -56,9 +56,9 @@
 
       <!-- nav escritorio -->
       <nav class="hidden lg:flex gap-7 text-xl font-medium uppercase">
-        <a href="shop-all.html" class="hover:text-rosa hover:underline focus:text-rosa">Shop</a>
-        <a href="starnews.html" class="hover:text-rosa hover:underline focus:text-rosa">#Starnews</a>
-        <a href="#contacto" class="hover:text-rosa hover:underline focus:text-rosa">Contact</a>
+        <a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop</a>
+        <a href="starnews.html" class="hover:text-rosa focus:text-rosa">#Starnews</a>
+        <a href="#contacto" class="hover:text-rosa focus:text-rosa">Contact</a>
       </nav>
 
       <!-- logo -->
@@ -118,9 +118,13 @@
           <div class="swiper-wrapper">
 
         <!-- tarjeta producto 1 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-leopard-bikini-gold.jpg" alt="Bikini dorado de leopardo con shorts" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-leopard-bikini-silver.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -131,9 +135,13 @@
         </article>
 
         <!-- tarjeta producto 2 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-backless-angel-minidress-black.jpg" alt="Minivestido negro Backless Angel" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-shop-all-22.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -144,9 +152,13 @@
         </article>
 
         <!-- tarjeta producto 3 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-sequin-lace-top.jpg" alt="Top de lentejuelas y encaje" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-dollz-love-money-top-sparkly-pink.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">XS</li><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -157,9 +169,13 @@
         </article>
 
         <!-- tarjeta producto 4 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-tie-strap-top-aqua.jpg" alt="Top aguamarina de tiras" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-shop-all-17.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -170,9 +186,13 @@
         </article>
 
         <!-- tarjeta producto 5 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-dollz-love-money-top-sparkly-pink.jpg" alt="Top Dollz Love Money rosa brillante" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-sequin-lace-top.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">XS</li><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li><li class="hover:text-rosa cursor-pointer">XL</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -183,9 +203,13 @@
         </article>
 
         <!-- tarjeta producto 6 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-cross-leather-top.jpg" alt="Top de cuero con cruz" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-shop-all-16.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -196,9 +220,13 @@
         </article>
 
         <!-- tarjeta producto 7 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-brown-studded-mesh-mini-dress.jpg" alt="Minivestido marrón de malla con tachuelas" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-shop-all-19.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -209,9 +237,13 @@
         </article>
 
         <!-- tarjeta producto 8 -->
-        <article class="swiper-slide tarjeta">
+        <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-fur-bolero-white.jpg" alt="Bolero de pelo blanco" class="w-full aspect-[3/4] object-cover">
+            <!-- segunda foto (sale al pasar el raton) -->
+            <img src="img/producto-fur-bolero-brown.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
+            <!-- tallas (salen al pasar el raton) -->
+            <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
           <div class="p-4 flex flex-col gap-1">
@@ -229,26 +261,26 @@
     </section>
 
     <!-- CATEGORIAS -->
-    <section id="categorias" class="py-12 lg:py-20">
+    <section id="categorias" class="pb-12 lg:pb-20">
       <h2 class="sr-only">Categorías</h2>
       <div class="flex flex-col md:flex-row">
 
       <!-- categoria 1 -->
-      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="0" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 border border-tinta dark:border-papel overflow-hidden focus:outline-2 focus:outline-rosa">
+      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="0" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-tops.jpg" alt="Camiseta Dollz Love Money" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
-        <h3 class="absolute z-10 left-4 bottom-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Tops_</h3>
+        <h3 class="absolute z-10 left-4 top-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Tops_</h3>
       </a>
 
       <!-- categoria 2 -->
-      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="100" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 border border-tinta dark:border-papel overflow-hidden focus:outline-2 focus:outline-rosa">
+      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="100" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-bikinis.jpg" alt="Bikini visto de espaldas" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
         <h3 class="absolute z-10 left-4 bottom-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Bikinis_</h3>
       </a>
 
       <!-- categoria 3 -->
-      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="200" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 border border-tinta dark:border-papel overflow-hidden focus:outline-2 focus:outline-rosa">
+      <a href="shop-all.html" data-aos="fade-up" data-aos-delay="200" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-bottoms.jpg" alt="Pantalón negro de campana" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
-        <h3 class="absolute z-10 left-4 bottom-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Bottoms_</h3>
+        <h3 class="absolute z-10 left-4 top-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Bottoms_</h3>
       </a>
 
       </div>
@@ -320,7 +352,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@g_lasosita</a></p>
         </article>
 
         <!-- look 2 -->
@@ -356,7 +388,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
         <!-- look 3 -->
@@ -392,7 +424,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
         <!-- look 4 -->
@@ -428,7 +460,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/lalbany/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@lalbany</a></p>
         </article>
 
         <!-- look 5 -->
@@ -464,7 +496,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
         <!-- look 6 -->
@@ -500,7 +532,7 @@
             <button class="look-anterior absolute left-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda anterior">‹</button>
             <button class="look-siguiente absolute right-1 top-1/2 -translate-y-1/2 z-10 text-2xl hover:text-rosa focus:text-rosa" aria-label="Prenda siguiente">›</button>
           </div>
-          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@G_lasosita</a></p>
+          <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-2"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
           </div>
@@ -519,7 +551,8 @@
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             Are your pieces handmade?
-            <span class="faq-icono text-rosa transition-transform duration-300">▾</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-mas w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-menos hidden w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Yes. Every Star Dollz piece is handmade in Madrid, so each one can be slightly different.</p>
         </div>
@@ -528,7 +561,8 @@
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             Do you have a discount code?
-            <span class="faq-icono text-rosa transition-transform duration-300">▾</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-mas w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-menos hidden w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Use the code NEWDOLLZ10 at checkout to get 10% off your order.</p>
         </div>
@@ -537,7 +571,8 @@
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             What sizes do you have?
-            <span class="faq-icono text-rosa transition-transform duration-300">▾</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-mas w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-menos hidden w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Most pieces come in sizes S, M and L. You can see the sizes on each product card.</p>
         </div>
@@ -546,7 +581,8 @@
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             How can I contact you?
-            <span class="faq-icono text-rosa transition-transform duration-300">▾</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-mas w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-menos hidden w-6 h-6 lg:w-8 lg:h-8 shrink-0 text-rosa" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Write to us with the contact form at the bottom of this page and we will get back to you.</p>
         </div>
@@ -555,7 +591,7 @@
 
   </main>
   <!-- PIE DE PAGINA -->
-  <footer id="contacto" class="relative z-10 bg-papel dark:bg-tinta border-t border-tinta dark:border-papel">
+  <footer id="contacto" class="bg-papel dark:bg-tinta border-t border-tinta dark:border-papel">
     <div class="flex flex-col gap-10 px-4 py-8 lg:flex-row lg:justify-between lg:px-6">
 
       <!-- enlaces -->
@@ -598,12 +634,12 @@
     </div>
 
     <!-- logo cromado -->
-    <img src="img/logo-cromado-stardollz.png" alt="Star Dollz" class="w-full">
+    <img src="img/logo-cromado-stardollz-recortado.png" alt="Star Dollz" class="block w-full">
   </footer>
 
-  <!-- BLOQUE GIF FIJO -->
-  <div class="bloque-gif sticky top-0 h-screen">
-    <img src="img/stardollz-video.gif" alt="" class="w-full h-full object-cover">
+  <!-- BLOQUE GIF (va debajo del footer) -->
+  <div class="bloque-gif">
+    <img src="img/stardollz-video.gif" alt="" class="block w-full">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
