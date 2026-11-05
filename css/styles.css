@@ -70,6 +70,20 @@
     height: 85%;
   }
 
+  /* figura chrome que sigue el ratón (escritorio); no tapa clics */
+  .cursor-dollz {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none;
+    display: none;
+    transform: translate(12px, 12px);
+    will-change: transform;
+  }
+
   @keyframes resaltar {
     0%, 60% {
       outline: 2px solid var(--color-rosa);
@@ -100,5 +114,12 @@
 
   .leer-mas span::after {
     transition: none;
+  }
+}
+
+/* en táctil / puntero grueso no mostramos la figura */
+@media (pointer: coarse) {
+  .cursor-dollz {
+    display: none !important;
   }
 }

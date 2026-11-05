@@ -101,4 +101,59 @@ $(function () {
     });
   });
 
+  // FIGURA CHROME QUE SIGUE AL RATÓN (no en táctil / puntero grueso)
+  const esTactil = window.matchMedia('(pointer: coarse)').matches;
+  const menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!esTactil) {
+    const figura = $('<img>', {
+      class: 'cursor-dollz',
+      src: 'img/cursor-dollz.png',
+      alt: '',
+      'aria-hidden': 'true'
+    });
+    $('body').append(figura);
+
+    let ratonX = 0;
+    let ratonY = 0;
+    let figuraX = 0;
+    let figuraY = 0;
+    let visible = false;
+
+    $(document).on('mousemove', function (evento) {
+      ratonX = evento.clientX;
+      ratonY = evento.clientY;
+
+      if (!visible) {
+        figura.css('display', 'block');
+        figuraX = ratonX;
+        figuraY = ratonY;
+        visible = true;
+      }
+
+      // con menos movimiento: sigue al ratón sin retraso
+      if (menosMovimiento) {
+        figura.css('transform', 'translate(' + (ratonX + 12) + 'px, ' + (ratonY + 12) + 'px)');
+      }
+    });
+
+    $(document).on('mouseleave', function () {
+      figura.css('display', 'none');
+      visible = false;
+    });
+
+    // seguimiento suave (como un offset cerca del puntero normal)
+    if (!menosMovimiento) {
+      function animarFigura() {
+        figuraX += (ratonX - figuraX) * 0.2;
+        figuraY += (ratonY - figuraY) * 0.2;
+        if (visible) {
+          figura.css('transform', 'translate(' + (figuraX + 12) + 'px, ' + (figuraY + 12) + 'px)');
+        }
+        window.requestAnimationFrame(animarFigura);
+      }
+      animarFigura();
+    }
+  }
+
 });
