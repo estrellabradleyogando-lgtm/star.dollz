@@ -43,6 +43,22 @@
   .leer-mas:focus span::after {
     width: 100%;
   }
+
+  /* CONTACT: al pulsar en el nav se resalta el formulario */
+  #contacto:target form {
+    animation: resaltar 2s;
+  }
+
+  @keyframes resaltar {
+    0%, 60% {
+      outline: 2px solid var(--color-rosa);
+      outline-offset: 8px;
+    }
+    100% {
+      outline: 2px solid transparent;
+      outline-offset: 8px;
+    }
+  }
 }
 
 /* ===== ANIMACIONES ===== */
