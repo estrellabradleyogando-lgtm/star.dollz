@@ -4,11 +4,30 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* la pista de la promo no debe ensanchar el documento */
   }
 
   body {
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
+}
+
+/* chrome inicial: promo + nav; la portada ocupa el resto del viewport */
+:root {
+  --alto-chrome-inicial: 3.45rem; /* móvil ~promo 20 + nav 35 */
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --alto-chrome-inicial: 4.25rem; /* escritorio ~promo 28 + nav 40 */
+  }
+}
+
+#portada {
+  /* refuerzo por si el utilitario de Tailwind CDN no genera calc+svh */
+  height: calc(100svh - var(--alto-chrome-inicial));
+  min-height: 20rem;
 }
 
 /* ===== COMPONENTES ===== */
