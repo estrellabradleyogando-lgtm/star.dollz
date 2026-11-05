@@ -134,6 +134,13 @@
   .leer-mas span::after {
     transition: none;
   }
+
+  /* sin AOS: títulos visibles de inmediato */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* en táctil / puntero grueso no mostramos la figura */

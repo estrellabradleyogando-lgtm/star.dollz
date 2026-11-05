@@ -46,15 +46,65 @@ $(function () {
   });
 
   // ANIMACIONES AL HACER SCROLL (AOS)
+  // Con overflow-x:hidden en html/body el eje Y pasa a auto (scrollport).
+  // Tras cargar el GIF sticky / imágenes, AOS a veces no marca títulos ya
+  // en viewport (p. ej. FAQ_ o #faq) y se quedan en opacity:0.
+  const menosMovimientoAOS = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   AOS.init({
     duration: 800,
-    once: true
+    once: true,
+    offset: 80,
+    disable: menosMovimientoAOS
   });
 
-  // cuando cargan todas las fotos la pagina es mas alta, asi que AOS recalcula
-  $(window).on('load', function () {
+  function revelarAOSEnVista() {
+    if (!window.AOS || menosMovimientoAOS) return;
+    document.querySelectorAll('[data-aos].aos-init:not(.aos-animate)').forEach(function (el) {
+      const caja = el.getBoundingClientRect();
+      const margen = 80;
+      if (caja.top < window.innerHeight - margen && caja.bottom > margen) {
+        el.classList.add('aos-animate');
+      }
+    });
+  }
+
+  function refrescarAOS() {
+    if (!window.AOS || menosMovimientoAOS) return;
     AOS.refresh();
+    revelarAOSEnVista();
+  }
+
+  // cuando cargan fotos / GIF la página es más alta: AOS recalcula
+  $(window).on('load', function () {
+    refrescarAOS();
+    setTimeout(refrescarAOS, 100);
+    setTimeout(refrescarAOS, 400);
   });
+
+  $('.bloque-gif img').on('load', refrescarAOS);
+
+  // scroll en el scrollport (html/body con overflow-x) no siempre llega a window;
+  // capturamos en document para no dejar títulos en opacity 0
+  let aosScrollTick = false;
+  function enScrollOResizeAOS() {
+    if (aosScrollTick || menosMovimientoAOS) return;
+    aosScrollTick = true;
+    window.requestAnimationFrame(function () {
+      aosScrollTick = false;
+      revelarAOSEnVista();
+    });
+  }
+  document.addEventListener('scroll', enScrollOResizeAOS, true);
+  $(window).on('resize', enScrollOResizeAOS);
+
+  // deep link (#faq) o hash al cargar
+  $(window).on('hashchange', function () {
+    setTimeout(refrescarAOS, 50);
+  });
+  if (window.location.hash) {
+    setTimeout(refrescarAOS, 100);
+  }
 
   // SLIDER WORN BY YOUR FAVOURITES (igual que trending)
   const sliderLooks = new Swiper('.slider-looks', {
