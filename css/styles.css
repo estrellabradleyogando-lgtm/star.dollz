@@ -52,6 +52,24 @@
     animation: resaltar 2s;
   }
 
+
+  /* texto de tarjetas: mismo alto de título y hueco de colores (línea alineada) */
+  .tarjeta-info__titulo {
+    min-height: 2.75em;
+    line-height: 1.25;
+  }
+
+  .tarjeta-info__colores {
+    min-height: 1.25em;
+    line-height: 1.25;
+  }
+
+  /* editoriales del shop: un poco menos altas (~15%) sin tocar el banner noche */
+  .shop-editorial {
+    align-self: center;
+    height: 85%;
+  }
+
   @keyframes resaltar {
     0%, 60% {
       outline: 2px solid var(--color-rosa);
