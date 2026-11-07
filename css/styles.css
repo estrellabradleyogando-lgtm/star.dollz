@@ -83,10 +83,18 @@
     line-height: 1.25;
   }
 
-  /* editoriales del shop: un poco menos altas (~15%) sin tocar el banner noche */
+  /* editoriales del shop: misma altura que las tarjetas de producto */
   .shop-editorial {
-    align-self: center;
-    height: 85%;
+    align-self: stretch;
+    height: 100%;
+    margin: 0;
+  }
+
+  .shop-editorial img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   /* figura chrome que sigue el ratón (escritorio); no tapa clics */
