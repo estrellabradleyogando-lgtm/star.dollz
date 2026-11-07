@@ -4,12 +4,12 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden; /* la pista de la promo no debe ensanchar el documento */
+    overflow-x: clip; /* la pista de la promo no debe ensanchar el documento */
   }
 
   body {
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 }
 
@@ -83,11 +83,13 @@
     line-height: 1.25;
   }
 
-  /* editoriales del shop: un poco menos altas (~15%) sin tocar el banner noche */
+  /* editoriales del shop: misma altura que las tarjetas, un pelín más bajas */
   .shop-editorial {
-    align-self: center;
-    height: 85%;
+    align-self: stretch;
+    margin-inline: 0;
+    margin-block: 0.35rem;
   }
+
 
   /* figura chrome que sigue el ratón (escritorio); no tapa clics */
   .cursor-dollz {
