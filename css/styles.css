@@ -33,7 +33,6 @@
 /* ===== COMPONENTES ===== */
 @layer components {
   .barra-promo {
-    /* encima del GIF sticky (z-0): si no, el GIF tapa la promo al estar arriba */
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -45,7 +44,7 @@
     animation: marquesina 30s linear infinite;
   }
 
-  /* READ MORE: la raya crece de izquierda a derecha */
+  /* READ MORE: */
   .leer-mas span {
     position: relative;
   }
@@ -66,13 +65,13 @@
     width: 100%;
   }
 
-  /* CONTACT: al pulsar en el nav se resalta el formulario */
+  /* CONTACT: */
   #contacto:target form {
     animation: resaltar 2s;
   }
 
 
-  /* texto de tarjetas: mismo alto de título y hueco de colores (línea alineada) */
+  /* texto de tarjetas */
   .tarjeta-info__titulo {
     min-height: 2.75em;
     line-height: 1.25;
@@ -83,7 +82,7 @@
     line-height: 1.25;
   }
 
-  /* editoriales del shop: misma altura que las tarjetas de producto */
+  /* editoriales del shop: */
   .shop-editorial {
     align-self: stretch;
     height: 100%;
@@ -98,7 +97,7 @@
   }
 
 
-  /* figura chrome que sigue el ratón (escritorio); no tapa clics */
+  /* cursor figura chrome */
   .cursor-dollz {
     position: fixed;
     top: 0;
@@ -134,7 +133,6 @@
   }
 }
 
-/* menos movimiento si el usuario lo prefiere */
 @media (prefers-reduced-motion: reduce) {
   .barra-promo__pista {
     animation: none;
@@ -144,7 +142,6 @@
     transition: none;
   }
 
-  /* sin AOS: títulos visibles de inmediato */
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
@@ -152,7 +149,6 @@
   }
 }
 
-/* en táctil / puntero grueso no mostramos la figura */
 @media (pointer: coarse) {
   .cursor-dollz {
     display: none !important;

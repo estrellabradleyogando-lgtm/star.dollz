@@ -17,7 +17,7 @@ $(function () {
   const raiz = $('html');
   const botonTema = $('#boton-tema');
 
-  // al cargar: ¿eligió oscuro la última vez?
+  // al cargar
   if (localStorage.getItem('tema') === 'oscuro') {
     raiz.addClass('dark');
   }
@@ -46,9 +46,6 @@ $(function () {
   });
 
   // ANIMACIONES AL HACER SCROLL (AOS)
-  // Con overflow-x:hidden en html/body el eje Y pasa a auto (scrollport).
-  // Tras cargar el GIF sticky / imágenes, AOS a veces no marca títulos ya
-  // en viewport (p. ej. FAQ_ o #faq) y se quedan en opacity:0.
   const menosMovimientoAOS = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   AOS.init({
@@ -75,7 +72,7 @@ $(function () {
     revelarAOSEnVista();
   }
 
-  // cuando cargan fotos / GIF la página es más alta: AOS recalcula
+  // fotos / GIF 
   $(window).on('load', function () {
     refrescarAOS();
     setTimeout(refrescarAOS, 100);
@@ -84,8 +81,7 @@ $(function () {
 
   $('.bloque-gif img').on('load', refrescarAOS);
 
-  // scroll en el scrollport (html/body con overflow-x) no siempre llega a window;
-  // capturamos en document para no dejar títulos en opacity 0
+  // scroll en el scrollport
   let aosScrollTick = false;
   function enScrollOResizeAOS() {
     if (aosScrollTick || menosMovimientoAOS) return;
@@ -98,7 +94,7 @@ $(function () {
   document.addEventListener('scroll', enScrollOResizeAOS, true);
   $(window).on('resize', enScrollOResizeAOS);
 
-  // deep link (#faq) o hash al cargar
+  // deep link (#faq) o hash
   $(window).on('hashchange', function () {
     setTimeout(refrescarAOS, 50);
   });
@@ -106,7 +102,7 @@ $(function () {
     setTimeout(refrescarAOS, 100);
   }
 
-  // SLIDER WORN BY YOUR FAVOURITES (igual que trending)
+  // SLIDER WORN BY YOUR FAVOURITES
   const sliderLooks = new Swiper('.slider-looks', {
     loop: true,
     slidesPerView: 1.15,
@@ -151,7 +147,7 @@ $(function () {
     });
   });
 
-  // FIGURA CHROME QUE SIGUE AL RATÓN (no en táctil / puntero grueso)
+  // CURSOR FIGURA CHROME (no en táctil)
   const esTactil = window.matchMedia('(pointer: coarse)').matches;
   const menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -181,7 +177,6 @@ $(function () {
         visible = true;
       }
 
-      // con menos movimiento: sigue al ratón sin retraso
       if (menosMovimiento) {
         figura.css('transform', 'translate(' + (ratonX + 12) + 'px, ' + (ratonY + 12) + 'px)');
       }
@@ -192,7 +187,7 @@ $(function () {
       visible = false;
     });
 
-    // seguimiento suave (como un offset cerca del puntero normal)
+    // seguimiento suave
     if (!menosMovimiento) {
       function animarFigura() {
         figuraX += (ratonX - figuraX) * 0.2;
