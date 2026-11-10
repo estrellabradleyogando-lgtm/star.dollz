@@ -4,7 +4,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    overflow-x: clip; /* la pista de la promo no debe ensanchar el documento */
+    overflow-x: clip;
   }
 
   body {
@@ -13,19 +13,17 @@
   }
 }
 
-/* chrome inicial: promo + nav; la portada ocupa el resto del viewport */
 :root {
-  --alto-chrome-inicial: 3.45rem; /* móvil ~promo 20 + nav 35 */
+  --alto-chrome-inicial: 3.45rem;
 }
 
 @media (min-width: 1024px) {
   :root {
-    --alto-chrome-inicial: 4.25rem; /* escritorio ~promo 28 + nav 40 */
+    --alto-chrome-inicial: 4.25rem;
   }
 }
 
 #portada {
-  /* refuerzo por si el utilitario de Tailwind CDN no genera calc+svh */
   height: calc(100svh - var(--alto-chrome-inicial));
   min-height: 20rem;
 }
@@ -33,7 +31,6 @@
 /* ===== COMPONENTES ===== */
 @layer components {
   .barra-promo {
-    /* encima del GIF sticky (z-0): si no, el GIF tapa la promo al estar arriba */
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -45,7 +42,6 @@
     animation: marquesina 30s linear infinite;
   }
 
-  /* READ MORE: la raya crece de izquierda a derecha */
   .leer-mas span {
     position: relative;
   }
@@ -66,13 +62,11 @@
     width: 100%;
   }
 
-  /* CONTACT: al pulsar en el nav se resalta el formulario */
   #contacto:target form {
     animation: resaltar 2s;
   }
 
 
-  /* texto de tarjetas: mismo alto de título y hueco de colores (línea alineada) */
   .tarjeta-info__titulo {
     min-height: 2.75em;
     line-height: 1.25;
@@ -83,7 +77,6 @@
     line-height: 1.25;
   }
 
-  /* editoriales del shop: misma altura que las tarjetas de producto */
   .shop-editorial {
     align-self: stretch;
     height: 100%;
@@ -98,7 +91,6 @@
   }
 
 
-  /* figura chrome que sigue el ratón (escritorio); no tapa clics */
   .cursor-dollz {
     position: fixed;
     top: 0;
@@ -134,7 +126,6 @@
   }
 }
 
-/* menos movimiento si el usuario lo prefiere */
 @media (prefers-reduced-motion: reduce) {
   .barra-promo__pista {
     animation: none;
@@ -144,7 +135,6 @@
     transition: none;
   }
 
-  /* sin AOS: títulos visibles de inmediato */
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
@@ -152,7 +142,6 @@
   }
 }
 
-/* en táctil / puntero grueso no mostramos la figura */
 @media (pointer: coarse) {
   .cursor-dollz {
     display: none !important;

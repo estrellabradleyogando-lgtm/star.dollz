@@ -34,7 +34,6 @@
   <!-- BARRA PROMO -->
   <div class="barra-promo bg-tinta text-rosa font-mono font-medium text-xs lg:text-sm py-0.5 lg:py-1 uppercase">
     <p class="sr-only">Get 10% off at checkout: code NEWDOLLZ10</p>
-    <!-- la pista tiene el texto 2 veces: se mueve la mitad y vuelve a empezar sin que se note -->
     <div class="barra-promo__pista flex" aria-hidden="true">
       <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-3.5 h-3.5 lg:w-4 lg:h-4" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
       <span class="flex items-center gap-6 pr-6 lg:gap-10 lg:pr-10"><svg class="w-3.5 h-3.5 lg:w-4 lg:h-4" viewBox="0 0 22.4 21.7" fill="currentColor" aria-hidden="true"><path d="M3.9 21.7L6.7 13.4L0 8.9H8.2L11.2 0L14.2 8.9H22.4L15.6 13.4L18.4 21.7L11.2 16.4Z"/></svg> Get 10% off at checkout: code NEWDOLLZ10</span>
@@ -51,25 +50,20 @@
   <header class="sticky top-0 z-50 bg-papel dark:bg-tinta">
     <div class="flex items-center justify-between px-4 py-1.5 lg:px-12 lg:py-1.5">
 
-      <!-- boton hamburguesa (solo movil) -->
       <button id="boton-menu" class="lg:hidden text-xl leading-none hover:text-rosa focus:text-rosa" aria-label="Abrir menú">☰</button>
 
-      <!-- nav escritorio -->
       <nav class="hidden lg:flex gap-7 text-xl font-medium uppercase">
         <a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop</a>
         <a href="starnews.html" class="hover:text-rosa focus:text-rosa">#Starnews</a>
         <a href="#contacto" class="hover:text-rosa focus:text-rosa">Contact</a>
       </nav>
 
-      <!-- logo -->
       <a href="index.html">
         <img src="img/logo-stardollz.svg" alt="Star Dollz" class="h-5 lg:h-7 dark:invert">
       </a>
 
-      <!-- iconos -->
       <div class="flex items-center gap-3 sm:gap-4 lg:gap-7">
         <a href="#" class="hidden lg:inline text-xl font-medium uppercase hover:text-rosa">Country ▾</a>
-        <!-- boton modo oscuro -->
         <button id="boton-tema" class="relative w-[43px] h-[23px] rounded-full border-[1.5px] border-tinta bg-papel dark:border-papel dark:bg-tinta" aria-label="Cambiar modo claro u oscuro">
           <span class="absolute top-px left-px w-[18px] h-[18px] rounded-full bg-tinta dark:bg-papel transition-transform duration-300 dark:translate-x-5"></span>
         </button>
@@ -85,7 +79,6 @@
       </div>
     </div>
 
-    <!-- menu movil (oculto al principio) -->
     <nav id="menu" class="hidden lg:hidden flex-col border-t border-tinta dark:border-papel px-4 py-4 gap-3 text-lg font-medium uppercase">
       <a href="shop-all.html" class="block hover:text-rosa focus:text-rosa">Shop</a>
       <a href="starnews.html" class="block hover:text-rosa focus:text-rosa">#Starnews</a>
@@ -117,13 +110,10 @@
         <div class="swiper slider-trending">
           <div class="swiper-wrapper">
 
-        <!-- tarjeta producto 1 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-leopard-bikini-gold.jpg" alt="Leopard Bikini with Shorts - Gold" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-leopard-bikini-gold-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -134,13 +124,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 2 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-backless-angel-minidress-black.jpg" alt="Backless Angel Minidress - Black" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-backless-angel-minidress-black-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -151,13 +138,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 3 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-sequin-lace-top.jpg" alt="Sequin Lace Top" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-sequin-lace-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">XS</li><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -168,13 +152,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 4 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-tie-strap-top-aqua.jpg" alt="Tie-strap top aqua" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-tie-strap-top-aqua-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -185,13 +166,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 5 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-dollz-love-money-top-sparkly-pink.jpg" alt="Dollz Love Money - Sparkly Pink" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-dollz-love-money-top-sparkly-pink-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -202,13 +180,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 6 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-cross-leather-top.jpg" alt="Cross Leather Top" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-cross-leather-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -219,13 +194,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 7 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-brown-studded-mesh-mini-dress.jpg" alt="Brown studded mesh mini dress" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-brown-studded-mesh-mini-dress-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -236,13 +208,10 @@
           </div>
         </article>
 
-        <!-- tarjeta producto 8 -->
         <article class="swiper-slide tarjeta group/tarjeta">
           <div class="relative">
             <img src="img/producto-fur-bolero-white.jpg" alt="FUR BOLERO - WHITE" class="w-full aspect-[3/4] object-cover">
-            <!-- segunda foto (sale al pasar el raton) -->
             <img src="img/producto-fur-bolero-white-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-            <!-- tallas (salen al pasar el raton) -->
             <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
             <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
           </div>
@@ -265,19 +234,16 @@
       <h2 class="sr-only">Categorías</h2>
       <div class="flex flex-col md:flex-row">
 
-      <!-- categoria 1 -->
       <a href="shop-all.html" data-aos="fade-up" data-aos-delay="0" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-tops.jpg" alt="Camiseta Dollz Love Money" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
         <h3 class="absolute z-10 left-4 top-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Tops_</h3>
       </a>
 
-      <!-- categoria 2 -->
       <a href="shop-all.html" data-aos="fade-up" data-aos-delay="100" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-bikinis.jpg" alt="Bikini visto de espaldas" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
         <h3 class="absolute z-10 left-4 bottom-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Bikinis_</h3>
       </a>
 
-      <!-- categoria 3 -->
       <a href="shop-all.html" data-aos="fade-up" data-aos-delay="200" class="categoria group relative flex items-end md:items-stretch bg-papel dark:bg-tinta md:flex-1 overflow-hidden focus:outline-2 focus:outline-rosa">
         <img src="img/categoria-bottoms.jpg" alt="Pantalón negro de campana" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition">
         <h3 class="absolute z-10 left-4 top-4 md:left-2 md:[writing-mode:vertical-rl] md:rotate-180 text-3xl lg:text-5xl font-medium uppercase group-hover:text-rosa">Bottoms_</h3>
@@ -305,7 +271,6 @@
 
     <!-- LOOKBOOK -->
     <section id="lookbook" class="bg-niebla dark:bg-tinta py-8 lg:py-12">
-      <!-- una foto por modelo: 2 columnas en movil, 4 en tablet y 8 en escritorio -->
       <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 items-end gap-y-6 lg:gap-y-0 px-4 lg:px-0">
         <img src="img/lookbook-1.png" alt="Modelo 1 del lookbook con top negro de cuero, minifalda y botas altas" class="w-full">
         <img src="img/lookbook-2.png" alt="Modelo 2 del lookbook con camiseta blanca Dollz Love Money" class="w-full">
@@ -325,14 +290,12 @@
         <span class="block text-rosa lg:pl-60">_Shop_the_look_</span>
       </h2>
 
-      <div data-aos="fade-up" class="relative px-3 lg:px-12">
+      <div data-aos="fade-up" class="relative px-9 lg:px-12">
         <div class="swiper slider-looks">
           <div class="swiper-wrapper">
 
-        <!-- look 1 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-1.jpg" alt="Look con gorra, camiseta y vaqueros" class="w-full aspect-[3/4] object-cover">
-          <!-- prenda (solo 1 producto, sin flechas) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="flex items-stretch gap-4 h-36 py-3">
               <img src="img/categoria-tops.jpg" alt="" class="h-full aspect-[3/4] object-cover shrink-0">
@@ -346,10 +309,8 @@
           <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-3"><a href="https://www.instagram.com/g_lasosita/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@g_lasosita</a></p>
         </article>
 
-        <!-- look 2 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-2.jpg" alt="Look con bikini metalizado de animal print" class="w-full aspect-[3/4] object-cover">
-          <!-- prenda (solo 1 producto, sin flechas) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="flex items-stretch gap-4 h-36 py-3">
               <img src="img/producto-metallic-animal-print-bikini-set.jpg" alt="" class="h-full aspect-[3/4] object-cover shrink-0">
@@ -363,10 +324,8 @@
           <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-3"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
-        <!-- look 3 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-3.jpg" alt="Look con bolero de pelo marrón" class="w-full aspect-[3/4] object-cover">
-          <!-- prenda (solo 1 producto, sin flechas) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="flex items-stretch gap-4 h-36 py-3">
               <img src="img/producto-fur-bolero-brown.jpg" alt="" class="h-full aspect-[3/4] object-cover shrink-0">
@@ -380,10 +339,8 @@
           <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-3"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
-        <!-- look 4 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-4.jpg" alt="Look con top halter blanco y minifalda de tachuelas" class="w-full aspect-[3/4] object-cover">
-          <!-- mini slider de prendas (2 productos) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="swiper slider-look">
               <div class="swiper-wrapper">
@@ -411,10 +368,8 @@
           <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-3"><a href="https://www.instagram.com/lalbany/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@lalbany</a></p>
         </article>
 
-        <!-- look 5 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-5.jpg" alt="Look con pantalón de yoga blanco y bolero de pelo" class="w-full aspect-[3/4] object-cover">
-          <!-- mini slider de prendas (2 productos) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="swiper slider-look">
               <div class="swiper-wrapper">
@@ -442,10 +397,8 @@
           <p class="font-mono text-xl uppercase text-tinta/50 dark:text-papel/50 mt-3"><a href="https://www.instagram.com/kristtina/" target="_blank" rel="noopener" class="hover:text-rosa focus:text-rosa">@kristtina</a></p>
         </article>
 
-        <!-- look 6 -->
         <article class="swiper-slide tarjeta-look flex flex-col">
           <img src="img/look-6.jpg" alt="Look con bolero de pelo marrón y bikini de leopardo" class="w-full aspect-[3/4] object-cover">
-          <!-- mini slider de prendas (2 productos) -->
           <div class="relative bg-tinta text-papel dark:bg-papel dark:text-tinta px-5">
             <div class="swiper slider-look">
               <div class="swiper-wrapper">
@@ -485,7 +438,6 @@
       <h2 data-aos="fade-up" class="text-4xl sm:text-5xl lg:text-8xl font-medium uppercase mb-8 lg:mb-12">FAQ_</h2>
 
       <div class="border-t border-tinta dark:border-papel">
-        <!-- pregunta 1 -->
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             Are your pieces handmade?
@@ -495,7 +447,6 @@
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Yes. Every Star Dollz piece is handmade in Madrid, so each one can be slightly different.</p>
         </div>
 
-        <!-- pregunta 2 -->
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             Do you have a discount code?
@@ -505,7 +456,6 @@
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Use the code NEWDOLLZ10 at checkout to get 10% off your order.</p>
         </div>
 
-        <!-- pregunta 3 -->
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             What sizes do you have?
@@ -515,7 +465,6 @@
           <p class="faq-respuesta hidden font-mono pb-4 lg:text-lg">Most pieces come in sizes S, M and L. You can see the sizes on each product card.</p>
         </div>
 
-        <!-- pregunta 4 -->
         <div class="border-b border-tinta dark:border-papel">
           <button class="faq-pregunta w-full flex items-center justify-between gap-4 py-4 text-left text-xl lg:text-3xl font-medium uppercase hover:text-rosa focus:text-rosa" aria-expanded="false">
             How can I contact you?
@@ -532,7 +481,6 @@
   <footer id="contacto" class="relative z-10 bg-papel dark:bg-tinta scroll-mt-16">
     <div class="flex flex-col gap-10 px-4 py-8 lg:flex-row lg:justify-between lg:px-6">
 
-      <!-- enlaces -->
       <div>
         <ul class="font-bold uppercase leading-tight">
           <li><a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop all</a></li>
@@ -547,7 +495,6 @@
         </ul>
         <p class="font-bold text-tinta/50 dark:text-papel/50 mt-4">© 2026 Star Dollz</p>
 
-        <!-- redes -->
         <div class="flex gap-4 mt-4">
           <a href="#" aria-label="Instagram" class="hover:opacity-60 focus:opacity-60">
             <img src="img/icon-instagram.svg" alt="" class="w-12 h-12">
@@ -558,7 +505,6 @@
         </div>
       </div>
 
-      <!-- formulario de contacto -->
       <form class="flex flex-col self-start w-full max-w-md">
         <h2 class="text-xl font-bold uppercase mb-3">Contact us</h2>
         <div class="flex">
@@ -571,11 +517,9 @@
       </form>
     </div>
 
-    <!-- logo cromado -->
     <img src="img/logo-cromado-stardollz-recortado.png" alt="Star Dollz" class="block w-full">
   </footer>
 
-  <!-- BLOQUE GIF (se queda fijo detras y aparece al bajar del footer) -->
   <div class="bloque-gif sticky bottom-0 z-0">
     <img src="img/stardollz-video.gif" alt="" class="block w-full">
   </div>
