@@ -17,7 +17,6 @@ $(function () {
   const raiz = $('html');
   const botonTema = $('#boton-tema');
 
-  // al cargar
   if (localStorage.getItem('tema') === 'oscuro') {
     raiz.addClass('dark');
   }
@@ -35,6 +34,7 @@ $(function () {
     loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
+    mousewheel: true,
     navigation: {
       nextEl: '.trending-siguiente',
       prevEl: '.trending-anterior'
@@ -72,7 +72,6 @@ $(function () {
     revelarAOSEnVista();
   }
 
-  // fotos / GIF 
   $(window).on('load', function () {
     refrescarAOS();
     setTimeout(refrescarAOS, 100);
@@ -81,7 +80,6 @@ $(function () {
 
   $('.bloque-gif img').on('load', refrescarAOS);
 
-  // scroll en el scrollport
   let aosScrollTick = false;
   function enScrollOResizeAOS() {
     if (aosScrollTick || menosMovimientoAOS) return;
@@ -94,7 +92,6 @@ $(function () {
   document.addEventListener('scroll', enScrollOResizeAOS, true);
   $(window).on('resize', enScrollOResizeAOS);
 
-  // deep link (#faq) o hash
   $(window).on('hashchange', function () {
     setTimeout(refrescarAOS, 50);
   });
@@ -107,6 +104,7 @@ $(function () {
     loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
+    mousewheel: true,
     navigation: {
       nextEl: '.looks-siguiente',
       prevEl: '.looks-anterior'
@@ -138,7 +136,7 @@ $(function () {
 
     new Swiper(this, {
       slidesPerView: 1,
-      rewind: true, // con solo 2 prendas vuelve al principio
+      rewind: true,
       nested: true,
       navigation: {
         nextEl: caja.find('.look-siguiente')[0],
@@ -147,7 +145,7 @@ $(function () {
     });
   });
 
-  // CURSOR FIGURA CHROME (no en táctil)
+  // FIGURA QUE SIGUE AL RATON
   const esTactil = window.matchMedia('(pointer: coarse)').matches;
   const menosMovimiento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -187,7 +185,6 @@ $(function () {
       visible = false;
     });
 
-    // seguimiento suave
     if (!menosMovimiento) {
       function animarFigura() {
         figuraX += (ratonX - figuraX) * 0.2;

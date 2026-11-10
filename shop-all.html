@@ -50,25 +50,20 @@
   <header class="sticky top-0 z-50 bg-papel dark:bg-tinta">
     <div class="flex items-center justify-between px-4 py-1.5 lg:px-12 lg:py-1.5">
 
-      <!-- boton hamburguesa -->
       <button id="boton-menu" class="lg:hidden text-xl leading-none hover:text-rosa focus:text-rosa" aria-label="Abrir menú">☰</button>
 
-      <!-- nav escritorio -->
       <nav class="hidden lg:flex gap-7 text-xl font-medium uppercase">
         <a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop</a>
         <a href="starnews.html" class="hover:text-rosa focus:text-rosa">#Starnews</a>
         <a href="#contacto" class="hover:text-rosa focus:text-rosa">Contact</a>
       </nav>
 
-      <!-- logo -->
       <a href="index.html">
         <img src="img/logo-stardollz.svg" alt="Star Dollz" class="h-5 lg:h-7 dark:invert">
       </a>
 
-      <!-- iconos -->
       <div class="flex items-center gap-3 sm:gap-4 lg:gap-7">
         <a href="#" class="hidden lg:inline text-xl font-medium uppercase hover:text-rosa">Country ▾</a>
-        <!-- boton modo oscuro -->
         <button id="boton-tema" class="relative w-[43px] h-[23px] rounded-full border-[1.5px] border-tinta bg-papel dark:border-papel dark:bg-tinta" aria-label="Cambiar modo claro u oscuro">
           <span class="absolute top-px left-px w-[18px] h-[18px] rounded-full bg-tinta dark:bg-papel transition-transform duration-300 dark:translate-x-5"></span>
         </button>
@@ -84,7 +79,6 @@
       </div>
     </div>
 
-    <!-- menu movil -->
     <nav id="menu" class="hidden lg:hidden flex-col border-t border-tinta dark:border-papel px-4 py-4 gap-3 text-lg font-medium uppercase">
       <a href="shop-all.html" class="block hover:text-rosa focus:text-rosa">Shop</a>
       <a href="starnews.html" class="block hover:text-rosa focus:text-rosa">#Starnews</a>
@@ -99,16 +93,12 @@
     <section id="shop-all" class="px-4 py-10 lg:px-12 lg:py-16">
       <h1 class="text-6xl md:text-8xl lg:text-9xl font-medium uppercase mb-8 lg:mb-12">Shop_all_</h1>
 
-      <!-- REJILLA DE PRODUCTOS: 2 columnas en movil, 3 en tablet y 4 en escritorio -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10">
 
-      <!-- producto 1 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-leopard-bikini-gold.jpg" alt="Leopard Bikini with Shorts - Gold" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-leopard-bikini-gold-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -119,13 +109,10 @@
         </div>
       </article>
 
-      <!-- producto 2 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-backless-angel-minidress-black.jpg" alt="Backless Angel Minidress - Black" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-backless-angel-minidress-black-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -136,13 +123,10 @@
         </div>
       </article>
 
-      <!-- producto 3 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-sequin-lace-top.jpg" alt="Sequin Lace Top" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-sequin-lace-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">XS</li><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -153,13 +137,10 @@
         </div>
       </article>
 
-      <!-- producto 4 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-tie-strap-top-aqua.jpg" alt="Tie-strap top aqua" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-tie-strap-top-aqua-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -170,18 +151,14 @@
         </div>
       </article>
 
-      <!-- imagen editorial 1 (2 columnas) -->
       <figure class="col-span-2 shop-editorial">
         <img src="img/shop-all-editorial-1.jpg" alt="Dos modelos sentadas sobre el capó de un coche blanco" class="w-full h-full object-cover">
       </figure>
 
-      <!-- producto 5 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-dollz-love-money-top-white-cheetah.jpg" alt="Dollz Love Money Top - White Cheetah" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-dollz-love-money-top-white-cheetah-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -192,13 +169,10 @@
         </div>
       </article>
 
-      <!-- producto 6 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-cross-leather-top.jpg" alt="Cross Leather Top" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-cross-leather-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -209,13 +183,10 @@
         </div>
       </article>
 
-      <!-- producto 7 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-brown-studded-mesh-mini-dress.jpg" alt="Brown studded mesh mini dress" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-brown-studded-mesh-mini-dress-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -226,13 +197,10 @@
         </div>
       </article>
 
-      <!-- producto 8 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-dollz-love-money-top-sparkly-pink.jpg" alt="Dollz Love Money - Sparkly Pink" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-dollz-love-money-top-sparkly-pink-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -243,13 +211,10 @@
         </div>
       </article>
 
-      <!-- producto 9 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-zebra-fringe-top.jpg" alt="Zebra Fringe Top" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-zebra-fringe-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -260,13 +225,10 @@
         </div>
       </article>
 
-      <!-- producto 10 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-metallic-animal-print-bikini-set-2.jpg" alt="Metallic animal print bikini set" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-metallic-animal-print-bikini-set-2-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -277,13 +239,10 @@
         </div>
       </article>
 
-      <!-- producto 11 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-tiger-print-fringe-bikini.jpg" alt="Tiger Print Fringe Bikini" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-tiger-print-fringe-bikini-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -294,13 +253,10 @@
         </div>
       </article>
 
-      <!-- producto 12 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-draped-sequin-top-grey.jpg" alt="Draped Sequin Top - GREY" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (sale al pasar el raton) -->
           <img src="img/producto-draped-sequin-top-grey-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen al pasar el raton) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -311,18 +267,14 @@
         </div>
       </article>
 
-      <!-- imagen editorial 2 (2 columnas) -->
       <figure class="col-span-2 shop-editorial">
         <img src="img/shop-all-editorial-2.jpg" alt="Dos modelos con pelo en un sofá" class="w-full h-full object-cover">
       </figure>
 
-      <!-- producto 13 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-fur-bolero-white.jpg" alt="FUR BOLERO - WHITE" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-fur-bolero-white-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -333,13 +285,10 @@
         </div>
       </article>
 
-      <!-- producto 14 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-leopard-bikini-silver-recorte.jpg" alt="Leopard Bikini with Shorts - SILVER" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-leopard-bikini-silver-recorte-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -350,13 +299,10 @@
         </div>
       </article>
 
-      <!-- producto 15 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-fur-bolero-brown.jpg" alt="FUR BOLERO - BROWN" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-fur-bolero-brown-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -367,13 +313,10 @@
         </div>
       </article>
 
-      <!-- producto 16 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-draped-sequin-top-black.jpg" alt="Draped Sequin Top - BLACK" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-draped-sequin-top-black-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -384,18 +327,14 @@
         </div>
       </article>
 
-      <!-- foto grande editorial (full screen width) -->
       <figure class="col-span-full">
         <img src="img/shop-all-banner-noche.jpg" alt="Tres modelos con ropa de Star Dollz" class="w-full h-full object-cover">
       </figure>
 
-      <!-- producto 17 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-draped-sequin-top-white.jpg" alt="Draped Sequin Top - WHITE" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-draped-sequin-top-white-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -406,13 +345,10 @@
         </div>
       </article>
 
-      <!-- producto 18 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-black-fringe-bandeau-top.jpg" alt="Black Fringe Bandeau Top" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-black-fringe-bandeau-top-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -423,13 +359,10 @@
         </div>
       </article>
 
-      <!-- producto 19 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-snake-flared-fringe-pants.jpg" alt="Snake flared fringe pants" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-snake-flared-fringe-pants-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -440,13 +373,10 @@
         </div>
       </article>
 
-      <!-- producto 20 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-sequined-open-back-t-shirt.jpg" alt="Sequined open Back T-Shirt" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-sequined-open-back-t-shirt-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -457,13 +387,10 @@
         </div>
       </article>
 
-      <!-- producto 21 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-backless-angel-minidress-white.jpg" alt="Backless Angel Minidress - WHITE" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-backless-angel-minidress-white-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -474,13 +401,10 @@
         </div>
       </article>
 
-      <!-- producto 22 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-angel-yoga-pants-black.jpg" alt="Angel Yoga Pants - BLACK" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-angel-yoga-pants-black-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -491,13 +415,10 @@
         </div>
       </article>
 
-      <!-- producto 23 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-dollz-love-money-top-black-zebra.jpg" alt="Dollz Love Money Top - Black Zebra" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-dollz-love-money-top-black-zebra-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -508,13 +429,10 @@
         </div>
       </article>
 
-      <!-- producto 24 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-fringe-ruffle-mini-skirt.jpg" alt="Fringe Ruffle Mini Skirt" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-fringe-ruffle-mini-skirt-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -525,13 +443,10 @@
         </div>
       </article>
 
-      <!-- producto 25 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-fur-bolero-black.jpg" alt="FUR BOLERO - BLACK" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-fur-bolero-black-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -542,13 +457,10 @@
         </div>
       </article>
 
-      <!-- producto 26 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-adjustable-mini-skirt-aqua.jpg" alt="Adjustable mini skirt aqua" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-adjustable-mini-skirt-aqua-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -559,13 +471,10 @@
         </div>
       </article>
 
-      <!-- producto 27 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-leather-feather-mini-skirt.jpg" alt="Leather Feather Mini Skirt" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-leather-feather-mini-skirt-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -576,13 +485,10 @@
         </div>
       </article>
 
-      <!-- producto 28 -->
       <article class="tarjeta group/tarjeta">
         <div class="relative">
           <img src="img/producto-angel-yoga-pants-white-2.jpg" alt="Angel Yoga Pants - WHITE" class="w-full aspect-[3/4] object-cover">
-          <!-- segunda foto (salen en hover) -->
           <img src="img/producto-angel-yoga-pants-white-2-hover.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover/tarjeta:opacity-100 transition">
-          <!-- tallas (salen en hover) -->
           <ul class="absolute bottom-0 inset-x-0 hidden group-hover/tarjeta:flex justify-around bg-tinta text-papel font-mono uppercase py-2"><li class="hover:text-rosa cursor-pointer">S</li><li class="hover:text-rosa cursor-pointer">M</li><li class="hover:text-rosa cursor-pointer">L</li></ul>
           <button class="group absolute top-3 right-3 text-rosa" aria-label="Añadir a favoritos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" class="w-6 h-6 group-hover:fill-rosa group-focus:fill-rosa transition"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
         </div>
@@ -602,7 +508,6 @@
   <footer id="contacto" class="relative z-10 bg-papel dark:bg-tinta scroll-mt-16">
     <div class="flex flex-col gap-10 px-4 py-8 lg:flex-row lg:justify-between lg:px-6">
 
-      <!-- enlaces -->
       <div>
         <ul class="font-bold uppercase leading-tight">
           <li><a href="shop-all.html" class="hover:text-rosa focus:text-rosa">Shop all</a></li>
@@ -617,7 +522,6 @@
         </ul>
         <p class="font-bold text-tinta/50 dark:text-papel/50 mt-4">© 2026 Star Dollz</p>
 
-        <!-- redes -->
         <div class="flex gap-4 mt-4">
           <a href="#" aria-label="Instagram" class="hover:opacity-60 focus:opacity-60">
             <img src="img/icon-instagram.svg" alt="" class="w-12 h-12">
@@ -628,7 +532,6 @@
         </div>
       </div>
 
-      <!-- formulario de contacto -->
       <form class="flex flex-col self-start w-full max-w-md">
         <h2 class="text-xl font-bold uppercase mb-3">Contact us</h2>
         <div class="flex">
@@ -641,11 +544,9 @@
       </form>
     </div>
 
-    <!-- logo -->
     <img src="img/logo-cromado-stardollz-recortado.png" alt="Star Dollz" class="block w-full">
   </footer>
 
-  <!-- GIF -->
   <div class="bloque-gif sticky bottom-0 z-0">
     <img src="img/stardollz-video.gif" alt="" class="block w-full">
   </div>

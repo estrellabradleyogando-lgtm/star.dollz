@@ -4,7 +4,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    overflow-x: clip; /* la pista de la promo no debe ensanchar el documento */
+    overflow-x: clip;
   }
 
   body {
@@ -13,19 +13,17 @@
   }
 }
 
-/* chrome inicial: promo + nav; la portada ocupa el resto del viewport */
 :root {
-  --alto-chrome-inicial: 3.45rem; /* móvil ~promo 20 + nav 35 */
+  --alto-chrome-inicial: 3.45rem;
 }
 
 @media (min-width: 1024px) {
   :root {
-    --alto-chrome-inicial: 4.25rem; /* escritorio ~promo 28 + nav 40 */
+    --alto-chrome-inicial: 4.25rem;
   }
 }
 
 #portada {
-  /* refuerzo por si el utilitario de Tailwind CDN no genera calc+svh */
   height: calc(100svh - var(--alto-chrome-inicial));
   min-height: 20rem;
 }
@@ -44,7 +42,6 @@
     animation: marquesina 30s linear infinite;
   }
 
-  /* READ MORE: */
   .leer-mas span {
     position: relative;
   }
@@ -65,13 +62,11 @@
     width: 100%;
   }
 
-  /* CONTACT: */
   #contacto:target form {
     animation: resaltar 2s;
   }
 
 
-  /* texto de tarjetas */
   .tarjeta-info__titulo {
     min-height: 2.75em;
     line-height: 1.25;
@@ -82,7 +77,6 @@
     line-height: 1.25;
   }
 
-  /* editoriales del shop: */
   .shop-editorial {
     align-self: stretch;
     height: 100%;
@@ -97,7 +91,6 @@
   }
 
 
-  /* cursor figura chrome */
   .cursor-dollz {
     position: fixed;
     top: 0;
