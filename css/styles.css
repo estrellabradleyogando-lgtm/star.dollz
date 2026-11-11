@@ -78,16 +78,14 @@
   }
 
   .shop-editorial {
-    align-self: stretch;
-    height: 100%;
+    align-self: start;
     margin: 0;
   }
 
   .shop-editorial img {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
   }
 
 
