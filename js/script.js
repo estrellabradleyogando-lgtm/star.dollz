@@ -34,7 +34,7 @@ $(function () {
     loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
-    mousewheel: { forceToAxis: true },
+    mousewheel: { forceToAxis: true, thresholdDelta: 30, releaseOnEdges: true },
     navigation: {
       nextEl: '.trending-siguiente',
       prevEl: '.trending-anterior'
@@ -104,7 +104,7 @@ $(function () {
     loop: true,
     slidesPerView: 1.15,
     spaceBetween: 16,
-    mousewheel: { forceToAxis: true },
+    mousewheel: { forceToAxis: true, thresholdDelta: 30, releaseOnEdges: true },
     navigation: {
       nextEl: '.looks-siguiente',
       prevEl: '.looks-anterior'
